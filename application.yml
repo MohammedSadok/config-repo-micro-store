@@ -3,6 +3,10 @@ management:
     web:
       exposure:
         include: "*"
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761/eureka}
 
 a1: 50
 a2: 60
