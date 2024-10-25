@@ -2,7 +2,7 @@ management:
   endpoints:
     web:
       exposure:
-        exclude: *
+        include: *
 
 a1: 50
 a2: 60
