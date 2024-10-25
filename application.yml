@@ -3,3 +3,6 @@ management:
     web:
       exposure:
         exclude: *
+
+a1: 50
+a2: 60
