@@ -7,6 +7,13 @@ eureka:
   client:
     service-url:
       defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761/eureka}
-
-sample:
-  value: "simple"
+spring:
+  cloud:
+    config:
+      enabled: true
+    discovery:
+      enabled: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:8070
